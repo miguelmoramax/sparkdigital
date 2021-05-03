@@ -7,7 +7,7 @@ To run this project, you need to install the dependencies using either:
 or
 ### `yarn`
 
-Then, you need to run the following command:
+Then, you need to run one of the following command:
 
 ### `npm run `
 
