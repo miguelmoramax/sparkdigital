@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import { ChakraProvider, Box, theme } from '@chakra-ui/react';
 
-function App() {
+import PostsPage from './presentation/index'
+import store from './store/store';
+import { Provider } from 'react-redux';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <ChakraProvider theme={theme}>
+        <Box maxWidth='8xl' margin='auto' p={5}>
+          <PostsPage />
+        </Box>
+      </ChakraProvider>
+    </Provider>
   );
-}
+};
 
 export default App;
