@@ -5,8 +5,13 @@ To run this project, you need to install the dependencies using either:
 ### `npm run install`
 
 or
-### `yarn start` 
+### `yarn`
 
-This runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Then, you need to run the following command:
 
+### `npm run `
+
+or
+### `yarn start`
+
+This runs the app in the development mode. opening a browser tab in [http://localhost:3000](http://localhost:3000).
